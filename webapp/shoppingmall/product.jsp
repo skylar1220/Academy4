@@ -17,8 +17,7 @@
 	scope="session"></jsp:useBean>
 	<%
 	String id = request.getParameter("id");
-	System.out.print("id ==== "+id);	
-	Product p = productDAO.getProductById(id);//@@
+	Product p = productDAO.getProductById(id);
 	%>
 	
 <body>
@@ -33,11 +32,12 @@
 		
 				<p>상품코드: <%= p.getProductId() %> </p>
 				<p>상품명: <%= p.getPname() %> </p>
-				<p>상품명: <%= p.getUnitPrice() %> </p>
-				<p>설명: <%= p.getDescription() %> </p>
+				<p>가격: <%= p.getUnitPrice() %> </p>
+				<p>상세정보: <%= p.getDescription() %> </p>
 				<p>제조사: <%= p.getManufacturer()  %> </p>
 				<p>분류: <%= p.getCategory()  %> </p>
 				<p>재고 수 : <%= p.getUnitInStock() %> </p>
+				<p>상태 : <%= p.getCondition() %> </p>
 			</div>
 	</div>
 
@@ -47,4 +47,6 @@
 	<jsp:include page="footer.jsp"></jsp:include>
 
 </body>
+
+
 </html>
