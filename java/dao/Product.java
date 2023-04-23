@@ -13,10 +13,13 @@ public class Product implements Serializable{
 	private String category;		// 분류
 	private long unitInStock;		// 재고수
 	private String condition;		// 신품, 중고품, 재생품
+	private String filename;		// 이미지 파일명
 	
 	public Product() {};
+
 	public Product(String productId, String pname, Integer unitPrice, String description, String manufacturer,
-			String category, long unitInStock, String condition) {
+			String category, long unitInStock, String condition, String filename) {
+		super();
 		this.productId = productId;
 		this.pname = pname;
 		this.unitPrice = unitPrice;
@@ -25,7 +28,9 @@ public class Product implements Serializable{
 		this.category = category;
 		this.unitInStock = unitInStock;
 		this.condition = condition;
+		this.filename = filename;
 	}
+
 	public String getProductId() {
 		return productId;
 	}
@@ -76,6 +81,12 @@ public class Product implements Serializable{
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	public String getFilename() {
+		return filename;
+	}
+	public void setFilename(String filename) {
+		this.filename = filename;
 	}
 	
 	
