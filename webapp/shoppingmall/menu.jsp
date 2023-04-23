@@ -6,7 +6,7 @@
 <!-- 내비게이션 -->
 <nav class="navbar navbar-expand-lg bg-light">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="hello.jsp">Home</a>
+		<a class="navbar-brand" href="welcome.jsp">Home</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarNavAltMarkup"
 			aria-controls="navbarNavAltMarkup" aria-expanded="false"

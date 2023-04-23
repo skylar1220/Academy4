@@ -37,6 +37,7 @@ List<Product> listofProducts = productDAO.getAllProducts();
 				Product p = listofProducts.get(i);
 			%>
 			<div class="col-md-4">
+				<img alt="" src="../resources/images/<%= p.getFilename()%>" style='width:200px'>
 				<h3><%= p.getPname() %></h3>
 				<p><%= p.getDescription()%></p>
 				<p><%=p.getUnitPrice() %>원</p>

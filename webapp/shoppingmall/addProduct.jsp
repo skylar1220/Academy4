@@ -5,6 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>3. 상품등록</title>
+<style> 
+.form-group.row{
+	margin: 10px;
+}
+</style>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -20,7 +25,9 @@
 	</div>
 <body>
 <div class="container">
-	<form name="newProduct" action="processAddProduct.jsp" method="post">
+	<form name="newProduct" action="processAddProduct.jsp" method="post" 
+	class="form-horizontal"
+	enctype="multipart/form-data">
 		<div class="form-group row">
 			<label class="col-sm-2">상품코드</label>
 			<div class="col-sm-3">
@@ -72,10 +79,18 @@
 			</div>
 		</div>
 		<div class="form-group row">
+			<label class="col-sm-2">이미지</label>
+						<div class="col-sm-5">
+				<input type="file" name="productImage" class="form-control">
+			</div>
+		</div>
+
+		<div class="form-group row">
 			<div class="col-sm-offset-2 col-sm-10">
 				<input type="submit" class="btn btn-primary" value="등록">
 			</div>
 		</div>
+		
 	</form>
 </div>
 	
