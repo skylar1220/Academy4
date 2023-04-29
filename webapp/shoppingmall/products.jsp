@@ -18,7 +18,13 @@
 <jsp:useBean id="productDAO" class="dao.ProductRepository"
 	scope="session"></jsp:useBean>
 <%
-List<Product> listofProducts = productDAO.getAllProducts();
+
+	// 리소스 경로 확인하기
+	ServletContext clc =  request.getServletContext();
+	String resourcePath =  clc.getResource("/resources/images").getPath();
+	out.print(resourcePath);
+
+	List<Product> listofProducts = productDAO.getAllProducts();
 %>
 <body>
 	<!-- 내비게이션 -->
