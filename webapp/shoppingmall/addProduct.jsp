@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+.form-group.row{
+margin: 10px
+}
+</style>
 <meta charset="UTF-8">
 <title>상품등록</title>
 <script type="text/javascript" src="../resources/js/validation.js"></script>
@@ -23,6 +28,9 @@
 
 <body>
 <div class="container">
+	<div class="text-right">
+		<a href="logout.jsp" class="btn btn-sm btn-success pull-right">logout</a>
+	</div>
 	<form name='newProduct' action="processAddProduct.jsp" method="post"
 	class = "form-horizontal" 
 	enctype="multipart/form-data">
