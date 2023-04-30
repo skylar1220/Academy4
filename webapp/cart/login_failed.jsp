@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>(cart) login failed</title>
 </head>
 <body>
-
+(cart)로그인 실패
 </body>
 </html>

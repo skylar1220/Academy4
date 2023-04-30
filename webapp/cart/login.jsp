@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>(cart) login</title>
 </head>
 <body>
 	<form action="j_security_check" name="loginForm" method="post">
