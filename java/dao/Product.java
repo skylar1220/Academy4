@@ -1,22 +1,24 @@
 package dao;
-// 6
+
 import java.io.Serializable;
 
-public class Product implements Serializable{
+public class Product implements Serializable {	
 	private static final long serialVersionUID = 1L;
 	
-	private String productId;		// 상품아이디
-	private String pname; 			// 상품명
+
+	private String productId;		// 상품아이디	
+	private String pname;			// 상품명
 	private Integer unitPrice;		// 상품 가격
 	private String description;		// 상품 설명
 	private String manufacturer;	// 제조사
 	private String category;		// 분류
-	private long unitInStock;		// 재고수
+	private long unitInStock;		// 재고 수
 	private String condition;		// 신품, 중고품, 재생품
 	private String filename;		// 이미지 파일명
+	private int quantity ; 			// 장바구니에 담은 개수
 	
-	public Product() {};
-
+	public Product() {}
+	
 	public Product(String productId, String pname, Integer unitPrice, String description, String manufacturer,
 			String category, long unitInStock, String condition, String filename) {
 		super();
@@ -28,6 +30,23 @@ public class Product implements Serializable{
 		this.category = category;
 		this.unitInStock = unitInStock;
 		this.condition = condition;
+		this.filename = filename;
+
+	}
+	
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public String getFilename() {
+		return filename;
+	}
+
+	public void setFilename(String filename) {
 		this.filename = filename;
 	}
 
@@ -82,12 +101,5 @@ public class Product implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	public String getFilename() {
-		return filename;
-	}
-	public void setFilename(String filename) {
-		this.filename = filename;
-	}
-	
 	
 }

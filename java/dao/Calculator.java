@@ -1,7 +1,9 @@
-package dao;
-// data access object
-public class Calculator {
-	public int myMethod(int n) {
-		return n*n*n;
-	}
-}
+//package dao;
+//
+//public class Calculator {
+//	
+//	public int myMethod(int n) {
+//		log4j
+//		return n*n*n;
+//	}
+//}
